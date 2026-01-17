@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #0a172b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.love-marquee {
+    color: #88ff00;
+    font-family: Quicksand;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 130px;
+    font-family: Impact, sans-serif;
+    margin-bottom: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(love.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    to { background-position-x: -500px}
+}
+
+h2 {
+    color: #ff4757;
+    font-size: 55px;
+    margin-bottom: 0px;
+    font-family: Quicksand;
+}
+
+.btn-group {
+    position: relative;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: -15px;
+}
+
+.btn {
+    padding: 10px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #a53400;
+    color: white;
+    transition: background 0.3s;
+    width: 100px;
+    font-family: Quicksand;
+}
+
+.btn:hover {
+    background-color: #ff0015;
+}
+
+.js-no-btn {
+    position: absolute;
+    left: 52%; 
+    transition: 0.1s; 
+}
+
+.js-yes-btn {
+    position: absolute;
+    left: 28%;
+}
+
+#page2, #page3 {
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.loader {
+    font-family: Quicksand;
+    font-size: 55px;
+    color: #ff4757;
+    font-weight: 700;
+}
+
+h3 { 
+    font-size: 40px; 
+    color: #ff3646;
+    margin-bottom: 45px; 
+    font-family: Quicksand; 
+
+}
+
+h4 { 
+    color: #91da00; 
+    font-size: 25px; 
+    font-family: Quicksand; 
+
+}
+
+p { 
+    color: rgb(255, 228, 170); 
+    margin-bottom: 2px; 
+    font-size: 15px;
+    font-family: Quicksand; 
+}
+
+.copyright-text {
+    font-size: 14px;
+    color: whitesmoke;
+    font-family: Quicksand;
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .btn-group {
+        gap: 20px;
+        height: 100px;
+    }
+
+    .btn {
+        width: 80px;
+        font-size: 14px;
+        padding: 8px 5px;
+    }
+
+    .js-no-btn {
+        left: 55%;
+    }
+    .js-yes-btn {
+        left: 20%;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .loader {
+        font-size: 35px;
+    }
+
+    .copyright-text {
+        margin-top: 50px;
+        font-size: 11px;
+    }
+}
